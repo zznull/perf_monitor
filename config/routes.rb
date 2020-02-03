@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/tests' => 'tested_urls#index'
+  get '/tests/last' => 'tested_urls#last'
+  post '/test' => 'tested_urls#create'
 end
